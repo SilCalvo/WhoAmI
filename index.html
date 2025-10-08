@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvia Calvo Cabello | Software Robotics Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* --- NAVBAR --- */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0077cc;
+        }
+
+        /* --- HERO / PRESENTATION --- */
+        .hero {
+            padding-top: 120px;
+            text-align: center;
+            background-color: #e8f1fa;
+            padding-bottom: 80px;
+        }
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 2.2em;
+            margin: 0;
+        }
+        .hero h3 {
+            font-weight: 400;
+            color: #555;
+        }
+
+        /* --- SECTIONS --- */
+        section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        section h2 {
+            color: #0077cc;
+            border-left: 5px solid #0077cc;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* --- EDUCATION / EXPERIENCE --- */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item h3 {
+            margin: 0;
+            color: #333;
+        }
+        .item span {
+            display: block;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        /* --- PROJECTS --- */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            color: #0077cc;
+        }
+
+        /* --- SKILLS --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        .skill {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            padding: 8px;
+            font-weight: 500;
+        }
+
+        /* --- CONTACT --- */
+        footer {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+        }
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- PRESENTATION -->
+<section id="home" class="hero">
+    <img src="pages/images/me_picture.png" alt="Photo of Silvia">
+    <h1>Silvia Calvo Cabello</h1>
+    <h3>Software Robotics Engineering Student | URJC</h3>
+    <p>Passionate about robotics and industrial automation.</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a 4th-year Software Robotics Engineering student at Rey Juan Carlos University, specializing in industrial robotics 
+        and software development for robotic systems. I have hands-on experience with ROS2, MoveIt2, and programming in Python and C++.
+    </p>
+    <p>
+        I am highly motivated to develop intelligent robotic systems that combine automation, artificial vision, and AI-based control.
+        Currently, I am seeking an opportunity to continue growing professionally in the field of autonomous robotics and industrial robotics.
+    </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="item">
+        <h3>Bachelor’s Degree in Software Robotics Engineering</h3>
+        <span>Rey Juan Carlos University · 2022 – Present</span>
+        <p>Mobile robot programming using ROS2 and Nav2, mechatronic system design, and computer vision.</p>
+    </div>
+    <div class="item">
+        <h3>Higher Vocational Training in Automation and Industrial Robotics (Grado Superior) </h3>
+        <span>I.E.S Antonio Machado, Alcalá de Henares · 2019 – 2021</span>
+        <p>PLC, HMI, Scada, and industrial robot programming. Industrial communications (Ethernet, Profinet, ASI) and electrical systems assembly.</p>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Work Experience</h2>
+    <div class="item">
+        <h3>Internship – RobotPlus</h3>
+        <span>Apr 2021 – Jun 2021 · Alcalá de Henares</span>
+        <p>Collaborative (UR) and mobile robot (MIR) programming. Testing robotic accessories such as Robotiq and OnRobot tools.</p>
+    </div>
+    <div class="item">
+        <h3>Math and Physics Tutor – Academia Maat</h3>
+        <span>Jan 2022 – Jun 2022</span>
+        <p>Taught secondary-level students, including learners with ADHD and other special needs, adapting lessons to individual requirements.</p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Personal Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Security Robot</h3>
+            <p>Developed an autonomous system to patrol an area and perform real-time facial recognition using ROS2 and OpenCV.</p>
+        </div>
+        <div class="project-card">
+            <h3>License Plate Recognition</h3>
+            <p>Implemented a computer vision system for automatic license plate reading, designed for automated access control and fines management.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <div class="skills-grid">
+        <div class="skill">Python</div>
+        <div class="skill">C++</div>
+        <div class="skill">ROS2</div>
+        <div class="skill">MoveIt2</div>
+        <div class="skill">Linux / Shell</div>
+        <div class="skill">Git / GitHub</div>
+        <div class="skill">PLC</div>
+        <div class="skill">Java</div>
+    </div>
+    <h3 style="margin-top:30px;">Soft Skills</h3>
+    <div class="skills-grid">
+        <div class="skill">Teamwork</div>
+        <div class="skill">Time Management</div>
+        <div class="skill">Communication</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Organization</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:silvia.calvo24@gmail.com">silvia.calvo24@gmail.com</a></p>
+    <p>LinkedIn: <a href="#">here goes link</a></p>
+    <p>GitHub: <a href="#">here goes link</a></p>
+    <p>Phone: +34 656 398 020</p>
+    <p>© 2025 Silvia Calvo Cabello</p>
+</footer>
+
+</body>
+</html>
